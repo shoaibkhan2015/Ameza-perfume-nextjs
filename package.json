@@ -1,0 +1,26 @@
+{
+  "name": "ameza-store",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Améza Parfums — Next.js storefront + API, deployable on Vercel",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "seed": "node --env-file-if-exists=.env scripts/seed.js",
+    "import:shopify": "node scripts/import-shopify-csv.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.118.0",
+    "next": "^16.4.3",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "devDependencies": {
+    "csv-parse": "^7.0.3"
+  }
+}
